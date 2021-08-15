@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+body {
+  background: #1a1c29;
+  font-family: century gothic, "Times New Roman", Times, serif, Arial, Helvetica,
+    sans-serif;
+  color: #fdfbfb;
+  overflow-x: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation {
+  width: 85%;
+  height: 90px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.checkBtn {
+  display: none;
+}
+.navigation .logo {
+  width: 40%;
+  margin-top: 4%;
+  margin-left: -15%;
+}
+
+.navigation ol {
+  list-style: none;
+}
+.navigation ol a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0.3em;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+}
+.navigation ol a:hover {
+  transition: background 0.6s;
+  background-color: #f9813a;
+}
+.main {
+  width: 85%;
+  height: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main::before,
+.main::after {
+  content: "";
+  width: 80%;
+  height: 70%;
+  background: #151618;
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  z-index: -10;
+}
+.main::after {
+  background: #15161885;
+  height: 60%;
+  top: 20px;
+  left: -40%;
+  border-top: 1px solid #f9813a;
+  border-right: 1px solid #4985c9;
+  z-index: -11;
+}
+.box h1 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+.box p {
+  font-size: 1.2em;
+  color: whitesmoke;
+  margin-bottom: 1.2em;
+}
+.box .btn {
+  font-size: 1.2em;
+  background: none;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #f9813a;
+  width: 7em;
+  height: 2.2em;
+  transition: all 0 4s;
+}
+.box .btn:hover {
+  background-color: #f9813a;
+}
+.main img {
+  width: 27em;
+  position: absolute;
+  right: 60px;
+  top: 70px;
+  z-index: -1;
+}
+.about {
+  width: 100%;
+  padding: 8em 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.about .box_wrap {
+  margin: 2em 0;
+}
+.about .box_wrap .heading {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+.about .box_wrap .heading::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 80px;
+  height: 5px;
+  background: #f9813a;
+  z-index: -1;
+}
+.about .box_wrap .text,
+.about .box_wrap i {
+  color: beige;
+}
+.about .box_wrap {
+  width: 35%;
+}
+.skills_box i {
+  margin-right: 00.5em;
+  margin-bottom: 0.5em;
+  color: #f9813a;
+}
+
+.education {
+  width: 100%;
+  background: #151618;
+  padding: 5em 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.education .left_box {
+  width: 29%;
+}
+.education .left_box .container {
+  margin: 1.5em 0;
+}
+.education .heading {
+  font-size: 3em;
+}
+.education :is(h3, small, p) {
+  margin: 0.5em 0;
+}
+.left_box .container {
+  position: relative;
+}
+.left_box .container::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  background: #f9813a;
+  left: -20px;
+}
+.education :is(small, p) {
+  color: rgb(201, 218, 233);
+}
+.education .right_box {
+  width: 40%;
+}
+.education .right_box img {
+  width: 120%;
+}
+
+/* experience*/
+.experience {
+  width: 100%;
+  padding: 5em 0;
+  flex-direction: column;
+}
+.experience h3 {
+  font-size: 3em;
+}
+.experience ul {
+  list-style: none;
+}
+.experience ul li {
+  margin: 3em 0;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  background: #2b2d334f;
+  cursor: pointer;
+  position: relative;
+}
+.experience ul li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  background: #f9813a;
+  top: 0;
+  left: -20px;
+  transform: translateY(8px);
+  transition: transform 0.4s;
+}
+.experience ul li:hover::before {
+  transform: translateY(0);
+}
+.experience ul li :is(small, p) {
+  margin: 0.4em 0;
+}
+/*projects*/
+.projects {
+  width: 100%;
+  padding: 5em 0;
+  background: #151618;
+  flex-direction: column;
+}
+.projects h3 {
+  font-size: 3em;
+}
+.projects .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.projects .container a {
+  text-decoration: none;
+  color: white;
+  margin: 2em 0.8em 0 0;
+  position: relative;
+}
+.projects .container a::before {
+  content: "\f0a9";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  background: #f9803ae1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path.3s;
+}
+.projects .container a:hover::before {
+  clip-path: circle(70% at 50% 50%);
+}
+.projects .container a div {
+  padding: 2em;
+  background: rgba(255, 2555, 255, 0.034);
+}
+/*Contact*/
+.contact {
+  width: 100%;
+  padding: 5em 0;
+  flex-direction: column;
+}
+.contact h3 {
+  font-size: 3em;
+}
+.contact form {
+  flex-direction: column;
+  min-width: 30%;
+}
+.contact form :is(input, textarea, button) {
+  margin: 0.8em;
+  width: 100%;
+  height: 45px;
+  background: #151618;
+  color: white;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0.2em 1em;
+}
+.contact form textarea {
+  resize: none;
+  height: 80px;
+}
+.contact form button {
+  background: #f9813a;
+  cursor: pointer;
+  height: 40px;
+  font-size: 1em;
+}
+@media (max-width: 1250px) {
+  .main img {
+    width: 25em;
+    right: 0;
+  }
+  .main img {
+    width: 35em;
+    top: 80px;
+  }
+  .main {
+    align-items: flex-end;
+  }
+  .checkBtn {
+    display: block;
+    width: 25px;
+    width: 25px;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+  }
+  .checkBtn::before {
+    content: "\f0c9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #fdfbfb;
+  }
+  .checkBtn:checked::before {
+    content: "\f00d";
+  }
+  .navigation ol {
+    position: absolute;
+    flex-direction: column;
+    background: #1a1c29;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    z-index: 100;
+    padding: 1.2em;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: lip-path 0.4s;
+  }
+  .checkBtn:checked ~ ol {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navigation ol::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #f9813a;
+  }
+}
+@media (max-width: 900px) {
+  .main img {
+    width: 30em;
+  }
+  .about .box_wrap,
+  .education .left_box.education .right_box {
+    width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .main img {
+    width: 22em;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+  .main {
+    height: 450px;
+  }
+}
