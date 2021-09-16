@@ -43,6 +43,8 @@
         <p class="text">
           Salut moi c'est c'est Jacques et je suis développeur Web Front-End
           avec des Connaissances en HTML ,CSS, JavaScript,Laravel,React...
+          <br><br> <a href="CV BOYODI Jacques@.pdf" download="CV_Jacques_BOYODI.pdf">
+            <button class="btn">Téléchargez mon CV </button> </a> 
         </p>
       </div>
       <div class="box_wrap">
@@ -140,7 +142,21 @@
           <a href="https://discord.gg/8DnZcV6D"><i class="fab fa-discord fa-3x"></i></a>
         </div>
     </div>
-   
+   <script>
+     if ( ! Modernizr.adownload ) {
+  var $link = $('a');
+ 
+    $link.each(function() {
+        var $download = $(this).attr('download');
+     
+        if (typeof $download !== typeof undefined && $download !== false) {
+      var $el = $('<div>').addClass('download-instruction').text('Right-click and select "Download Linked File"');
+      $el.insertAfter($(this));
+        }
+ 
+    });
+}
+   </script>
   </body>
   <footer>
     

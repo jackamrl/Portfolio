@@ -95,6 +95,20 @@ body {
   height: 2.2em;
   transition: all 0 4s;
 }
+.box_wrap .btn {
+  font-size: 0.9em;
+  background: none;
+  color: beige;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #f9813a;
+  width: 11em;
+  height: 2.2em;
+  transition: all 0 4s;
+}
+.box_wrap .btn:hover {
+  background-color: #f9813a;
+}
 .box .btn:hover {
   background-color: #f9813a;
 }
