@@ -52,7 +52,7 @@ body {
 
 .navigation ol {
   list-style: none;
-  margin: 20px;
+  margin: 0px;
   
 }
 .navigation ol a {
@@ -82,7 +82,7 @@ body {
   background: #151618;
   position: absolute;
   bottom: 0;
-  right: -10%;
+  right: -7%;
   z-index: -10;
 }
 .main::after {
@@ -245,7 +245,7 @@ body {
 
 /*Socialmedia*/
 .containerf {
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   height: 250px;
   width: auto;
   background: white;
@@ -559,7 +559,7 @@ body {
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
     font-size: 1.8em;
-    color: #fdfbfb;
+    color: #ffffff;
   }
   .checkBtn:checked::before {
     content: "\f00d";
@@ -740,8 +740,8 @@ body {
   }
   .navigation .logo{
     position: relative;
-    margin-left: 0;
-    left: -160px;
+    margin-left: -140px;
+    /* left: -140px; */
     width: 100%;
   }
   .projects .container .wrapper{
