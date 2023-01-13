@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
@@ -14,10 +14,12 @@ body {
     "Trebuchet MS", sans-serif, Times, serif, Arial, Helvetica, sans-serif;
   color: #fdfbfb;
   overflow-x: hidden;
-  width: 100%;
+  max-width: 100%;
+    /* font-family: century gothic; */
+
   /* background-color: yellow; */
-  margin: 0;
-  padding: 0;
+
+
 }
 
 .center {
@@ -103,7 +105,11 @@ body {
   color: whitesmoke;
   margin-bottom: 1.2em;
 }
+.box a {
+  font-family: century gothic;
+}
 .box .btn {
+  font-family: century gothic;
   font-size: 1.2em;
   background: none;
   color: whitesmoke;
@@ -246,6 +252,7 @@ body {
 /*Socialmedia*/
 .containerf {
   overflow-y: hidden;
+  overflow-x: hidden;
   height: 250px;
   width: auto;
   background: white;
@@ -425,6 +432,7 @@ body {
     
   }
   .projects .container .wrapper .categorie .btn{
+    font-family: century gothic;
     text-decoration: none;
     border: none;
     background-color: #242f3d;
@@ -507,6 +515,7 @@ body {
   min-width: 30%;
 }
 .contact form :is(input, textarea, button) {
+  font-family: century gothic;
   margin: 0.8em;
   width: 100%;
   height: 45px;
@@ -532,7 +541,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    width: 100%;
+    max-width: 100%;
     /* background-color: red; */
   }
   .main img {
@@ -734,7 +743,7 @@ body {
     width: 30px;
     height: 30px;
     position: relative;
-    left: 40px;
+    left: 15px;
     z-index: 20;
     margin: 1rem;
   }
@@ -746,7 +755,8 @@ body {
   }
   .projects .container .wrapper{
     display: grid;
-    width: 100vw;
+    width: 100%;
+    /* background-color: #4985c9; */
  
     margin-left: 5px;
     min-height: 400px;
@@ -805,18 +815,70 @@ body {
     padding: 5em 0;
     flex-direction: column;
   }
+  .main img {
+    width: 22em;
 
+  }
+  .box{
+    /* background-color: #e9a781; */
+    margin-top: 530px;
+    
+  }
+  .main {
+    width: 85%;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 70px;
+    /* background-color: yellow; */
+  }
+  .main::before,
+  .main::after {
+    content: "";
+    width: 80%;
+    height: 70%;
+    background: #151618;
+    position: absolute;
+    bottom: -30%;
+
+    right: 0%;
+    z-index: -10;
+  }
   .main {
     height: 450px;
     width: 22em;
   }
+
+  .checkBtn {
+    display: inline;
+    width: 25px;
+    width: 25px;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+  }
+  .checkBtn::before {
+    content: "\f0c9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #ffffff;
+  }
+  .checkBtn:checked::before {
+    content: "\f00d";
+  }
   .containerf p {
     left: 0;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     /* color: #e9a781; */
+    margin: auto;
+    right: 0;
     z-index: 20;
   }
   .containerf .icons {
+    visibility: hidden;
     width: 30px;
     height: 30px;
     position: relative;
@@ -827,13 +889,13 @@ body {
 
   .navigation .logo{
     position: relative;
-    margin-left: 0;
-    left: -120px;
+    margin-left: -120px;
     width: 100%;
   }
 
   .projects{
     width: 100%;
+    padding: 10px;
   }
   .projects h3{
     font-size: 2rem;
@@ -844,7 +906,8 @@ body {
   .projects .container .wrapper{
     display: grid;
     width: 100vw;
- 
+    /* background-color: #4985c9; */
+
     margin-left: 5px;
     min-height: 400px;
     flex-wrap: wrap;
@@ -865,8 +928,8 @@ body {
     border-left: 2px solid #25272e4f; */
     border: 2px solid #25272e4f;
     cursor: pointer;
-    margin: 20px;
-    width: 400px;
+    margin: 10px 0;
+    width: 100%;
     min-height: 120px;
     cursor: pointer;
     height: 570px;
